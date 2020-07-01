@@ -18,9 +18,14 @@
     }
 
     button {
-        display: block;
+        display: inline-block;
         margin-left: auto;
         margin-right: auto;
+        height: 40px;
+    }
+
+    #search-options {
+        text-align: center;
     }
 </style>
 <html>
@@ -30,7 +35,9 @@
     <main>
         <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"><br>
         <input id="searchbar" class="searchbar"><br>
-        <button id="search">Google Search</button>
-        <button id="lucky">I'm Feeling Lucky</button>
+        <div id="search-options">
+            <button id="search">Google Search</button>
+            <button id="lucky">I'm Feeling Lucky</button>
+        </div>
     </main>
 </html>
