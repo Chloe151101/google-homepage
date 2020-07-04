@@ -32,12 +32,12 @@
         font-size: 15px;
         color: black;
         text-decoration: none;
-        width: 100%;
-        display: block;
+        display: inline;
     }
 
     header {
         background-color: lightgrey;
+        padding-bottom: 15px;
     }
 
     a:hover {
@@ -46,10 +46,12 @@
 
     .left-links {
         text-align: left;
+        padding-right: 10px;
     }
 
     .right-links {
-        text-align: right;
+        float: right;
+        padding-left: 10px;
     }
 </style>
 <html>
@@ -58,10 +60,10 @@
     </head>
     <main>
         <header>
-            <a href="#" class="left-links">About</a>
-            <a href="#" class="left-links">Store</a>
-            <a href="#" class="right-links">Gmail</a>
-            <a href="#" class="right-links">Images</a>
+            <a href="#" id="about" class="left-links">About</a>
+            <a href="#" id="store" class="left-links">Store</a>
+            <a href="#" id="gmail" class="right-links">Gmail</a>
+            <a href="#" id="images" class="right-links">Images</a>
         </header>
         <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"><br>
         <input id="searchbar" class="searchbar"><br>
